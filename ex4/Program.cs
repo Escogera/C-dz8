@@ -59,7 +59,7 @@ try
     SpiralFillArray(array);
     PrintArray(array);
 }
-catch 
+catch
 {
-    Console.WriteLine("Надо чтобы количество строк и столбцов совпадало");   
+    Console.WriteLine("Надо чтобы количество строк и столбцов совпадало");
 }

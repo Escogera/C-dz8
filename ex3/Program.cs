@@ -65,16 +65,16 @@ FillArray(array2);
 PrintArray(array2);
 Console.WriteLine();
 void Multiplication(int[,] array, int[,] array2)
+{
+    int[,] newArray = new int[line, column];
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        int[,] newArray = new int[line, column];
-        for(int i = 0; i < array.GetLength(0); i++)
-            {
-                for(int j = 0; j < array.GetLength(1); j++)
-                    {
-                        newArray[i,j] = array[i,j] * array2[i,j];
-                    }
-            }
-        PrintArray(newArray);
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            newArray[i, j] = array[i, j] * array2[i, j];
+        }
     }
+    PrintArray(newArray);
+}
 Multiplication(array, array2);
 
